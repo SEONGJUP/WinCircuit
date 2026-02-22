@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(TMPDIR=\"/tmp\")",
+      "Bash(cmd.exe /c \"cd /d D:\\\\SEIIM CODE\\\\Cluade\\\\traide_jw && npm install\")",
+      "Bash(\"/c/Program Files/nodejs/npm\" install --prefix \"/d/SEIIM CODE/Cluade/traide_jw\")",
+      "Bash(bash \"/d/SEIIM CODE/Cluade/traide_jw/install.sh\")",
+      "Bash(cmd.exe /c \"D:\\\\SEIIM CODE\\\\Cluade\\\\traide_jw\\\\start-server.bat\")",
+      "Bash(cmd.exe /c start \"\" \"D:\\\\SEIIM CODE\\\\Cluade\\\\traide_jw\\\\run-dev.bat\")",
+      "Bash(lt:*)"
+    ]
+  }
+}

@@ -1,0 +1,474 @@
+.indicator-purchase {
+  min-height: 100vh;
+  background: #0b0f1a;
+  color: #e2e8f0;
+}
+
+/* Nav */
+.ip-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(11, 15, 26, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ip-nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ip-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ip-logo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.ip-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ip-back-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+/* Main */
+.ip-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero */
+.ip-hero {
+  padding-top: 120px;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.ip-badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 2rem;
+}
+
+.ip-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.3;
+  color: #f1f5f9;
+  margin-bottom: 1.5rem;
+}
+
+.ip-accent {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ip-desc {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+/* Section Title */
+.ip-section-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Payment Box */
+.ip-payment {
+  margin-bottom: 3rem;
+}
+
+.ip-payment-box {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+/* QR Area */
+.ip-qr-area {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.ip-qr-frame {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ip-qr-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ip-qr-label {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.8rem;
+}
+
+/* Wallet Area */
+.ip-wallet-area {
+  flex: 1;
+}
+
+.ip-network-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10b981;
+  margin-bottom: 1.2rem;
+}
+
+.ip-network-dot {
+  width: 6px;
+  height: 6px;
+  background: #10b981;
+  border-radius: 50%;
+}
+
+.ip-wallet-area h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 0.8rem;
+}
+
+.ip-address-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.ip-address {
+  flex: 1;
+  font-size: 0.8rem;
+  color: #e2e8f0;
+  word-break: break-all;
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+}
+
+.ip-copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #10b981;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.ip-copy-btn:hover {
+  background: rgba(16, 185, 129, 0.25);
+}
+
+.ip-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.8rem 1rem;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #ef4444;
+  line-height: 1.5;
+}
+
+.ip-warning svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Form */
+.ip-form-section {
+  margin-bottom: 3rem;
+}
+
+.ip-form-desc {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.ip-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ip-input-group {
+  margin-bottom: 1.2rem;
+}
+
+.ip-input-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.ip-input-group input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.ip-input-group input:focus {
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.ip-input-group input::placeholder {
+  color: #475569;
+}
+
+.ip-submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ip-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+}
+
+.ip-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Process Steps */
+.ip-process {
+  margin-bottom: 4rem;
+}
+
+.ip-process-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.ip-pstep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.2rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  min-width: 130px;
+}
+
+.ip-pstep-num {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.ip-pstep p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.ip-pstep-arrow {
+  color: #334155;
+  flex-shrink: 0;
+}
+
+/* Success */
+.ip-success {
+  text-align: center;
+  padding: 4rem 0 6rem;
+}
+
+.ip-success-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10b981;
+}
+
+.ip-success-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.ip-success h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+}
+
+.ip-success p {
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.ip-success strong {
+  color: #10b981;
+}
+
+.ip-success-note {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ip-home-btn {
+  padding: 0.8rem 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ip-home-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ip-payment-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .ip-wallet-area {
+    width: 100%;
+  }
+
+  .ip-process-steps {
+    flex-direction: column;
+  }
+
+  .ip-pstep-arrow {
+    transform: rotate(90deg);
+  }
+
+  .ip-hero {
+    padding-top: 100px;
+  }
+
+  .ip-address-box {
+    flex-direction: column;
+  }
+}
