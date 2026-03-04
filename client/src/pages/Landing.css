@@ -1919,6 +1919,29 @@
   .disclaimer-box {
     padding: 1.5rem;
   }
+
+  .modal-box-sm {
+    max-width: 100%;
+  }
+
+  .wallet-address {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 100%;
+    word-break: break-all;
+  }
+
+  .wallet-address code {
+    font-size: 0.75rem;
+    white-space: normal;
+    word-break: break-all;
+  }
+
+  .qr-img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* Scrollbar for modals */
