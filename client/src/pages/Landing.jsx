@@ -271,24 +271,14 @@ function Landing() {
             {t.adaptive.rule} <strong>{t.adaptive.ruleBold}</strong> {t.adaptive.ruleSuffix}
           </p>
 
-          <div className="chart-image-stack fade-up">
-            <div className="chart-image-card">
-              <div className="chart-image-header">
-                <span className="chart-dot green-dot" />
-                <span>{t.adaptive.chartLabel}</span>
-              </div>
-              <div className="chart-image-body">
-                <img src="https://github.com/SEONGJUP/WinCircuit/blob/main/public/images/1.png?raw=true" alt="WinCircuit 실전 차트 1" className="chart-img" />
-              </div>
+          <div className="chart-image-card fade-up">
+            <div className="chart-image-header">
+              <span className="chart-dot green-dot" />
+              <span>{t.adaptive.chartLabel}</span>
             </div>
-            <div className="chart-image-card">
-              <div className="chart-image-header">
-                <span className="chart-dot green-dot" />
-                <span>{t.adaptive.chartLabel}</span>
-              </div>
-              <div className="chart-image-body">
-                <img src="https://github.com/SEONGJUP/WinCircuit/blob/main/public/images/2.png?raw=true" alt="WinCircuit 실전 차트 2" className="chart-img" />
-              </div>
+            <div className="chart-image-body">
+              <img src="https://github.com/SEONGJUP/WinCircuit/blob/main/public/images/1.png?raw=true" alt="WinCircuit Performance 1" className="chart-img" />
+              <img src="https://github.com/SEONGJUP/WinCircuit/blob/main/public/images/2.png?raw=true" alt="WinCircuit Performance 2" className="chart-img" />
             </div>
           </div>
         </div>
