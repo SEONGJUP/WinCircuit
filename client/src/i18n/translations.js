@@ -177,7 +177,7 @@ const translations = {
       item1Highlight: '무료',
       item1Suffix: '로 사용하실 수 있습니다.',
       item2: 'OKX 거래소에서 제공하는 기능인 signal bot을 이용한 카피트레이딩입니다.',
-      item3: '각 1,000 / 3,000 / 6,000 / 10,000 테더로 단리로 운용됩니다.',
+      item3: '각 1,000 / 3,000 / 6,000 / 10,000 / 50,000 테더로 단리로 운용됩니다.',
       item4: '원하시는 자본금의 링크를 클릭하시고 subscribe하시면 OKX 거래소에서 카피트레이딩을 시작하실 수 있습니다.',
       item5: '자본금을 맡기는 것이 아닌 시작과 종료를 언제든지 정하실 수 있습니다.',
       item6: '구독(무료)하시고 적용하시면 WinCircuit에게 매매를 맡기실 수 있습니다.',
@@ -186,6 +186,7 @@ const translations = {
       btn2: '자본금 3,000 USDT Signal Bot 구독하기',
       btn3: '자본금 6,000 USDT Signal Bot 구독하기',
       btn4: '자본금 10,000 USDT Signal Bot 구독하기',
+      btn5: '자본금 50,000 USDT Signal Bot 구독하기',
     },
 
     // Lifetime Modal
@@ -204,7 +205,7 @@ const translations = {
     // Payment Modal
     paymentModal: {
       title: '결제 안내',
-      walletLabel: 'USDT 지갑 주소 (TRC-20)',
+      walletLabel: 'USDT 지갑 주소 (OKX거래소, TRC-20)',
       walletAddress: 'TVRhk7X6GJEfqHXedbd3zG9Zi9RAMLacgu',
       copied: '복사됨!',
       note1: '위 지갑 주소로 3,300 USDT를 이체해 주세요.',
@@ -426,6 +427,7 @@ const translations = {
       btn2: 'Subscribe 3,000 USDT Signal Bot',
       btn3: 'Subscribe 6,000 USDT Signal Bot',
       btn4: 'Subscribe 10,000 USDT Signal Bot',
+      btn5: 'Subscribe 50,000 USDT Signal Bot',
     },
 
     // Lifetime Modal
@@ -444,7 +446,7 @@ const translations = {
     // Payment Modal
     paymentModal: {
       title: 'Payment Information',
-      walletLabel: 'USDT Wallet Address (TRC-20)',
+      walletLabel: 'USDT Wallet Address (OKX Exchange, TRC-20)',
       walletAddress: 'TVRhk7X6GJEfqHXedbd3zG9Zi9RAMLacgu',
       copied: 'Copied!',
       note1: 'Please transfer 3,300 USDT to the wallet address above.',

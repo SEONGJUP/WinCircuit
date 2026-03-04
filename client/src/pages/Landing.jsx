@@ -586,6 +586,7 @@ function Landing() {
                 { label: t.subModal.btn2, url: 'https://www.okx.com/trading-bot/signal/3339571381662015488' },
                 { label: t.subModal.btn3, url: 'https://www.okx.com/trading-bot/signal/3339595764258488320' },
                 { label: t.subModal.btn4, url: 'https://www.okx.com/trading-bot/signal/3339600759439671296' },
+                { label: t.subModal.btn5, url: 'https://www.okx.com/trading-bot/signal/3359833524864970752' },
               ].map((item, i) => (
                 <a key={i} href={item.url} className="modal-signal-btn" target="_blank" rel="noopener noreferrer">{item.label}</a>
               ))}
