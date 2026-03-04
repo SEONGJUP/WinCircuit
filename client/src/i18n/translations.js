@@ -68,7 +68,7 @@ const translations = {
       rule: '모든 진입은',
       ruleBold: '규칙 안에서만',
       ruleSuffix: '이루어집니다.',
-      chartLabel: 'WinCircuit 2025-2026 Performance [From 2025/05, x10 Ethereum]',
+      chartLabel: 'WinCircuit 2025-2026 Performance [From May 2025, x10 Ethereum]',
       chartProfit: '익절',
       legendMarket: '시장 가격',
       legendProfit: 'WinCircuit 수익',
