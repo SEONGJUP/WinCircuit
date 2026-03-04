@@ -561,7 +561,10 @@ function Landing() {
             <h2 className="modal-title">{t.subModal.title}</h2>
             <div className="modal-body">
               <ol className="modal-list">
-                <li>{t.subModal.item1} <span className="modal-highlight">{t.subModal.item1Highlight}</span>{t.subModal.item1Suffix}</li>
+                <li className="modal-list-with-btn">
+                  <span>{t.subModal.item1} <span className="modal-highlight">{t.subModal.item1Highlight}</span>{t.subModal.item1Suffix}</span>
+                  <a href="https://www.okx.com/join/33286229" className="okx-join-btn" target="_blank" rel="noopener noreferrer">{t.subModal.okxJoin}</a>
+                </li>
                 <li>{t.subModal.item2}</li>
                 <li>{t.subModal.item3}</li>
                 <li>{t.subModal.item4}</li>
