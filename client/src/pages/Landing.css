@@ -1693,7 +1693,7 @@
   color: #fbbf24;
   font-family: 'Courier New', monospace;
   letter-spacing: 0.02em;
-  word-break: break-all;
+  white-space: nowrap;
 }
 
 .copy-btn {
