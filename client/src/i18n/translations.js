@@ -124,6 +124,7 @@ const translations = {
       item4: '직접 매매할 시간이 없는 분',
       tvLink: '15달러 쿠폰받고 트레이딩뷰 가입하기',
       okxLink: 'OKX 해외선물거래소 가입하기',
+      okxPayback: '수수료 20% 페이백입니다. 가입권유가 아니니 원하지 않는 분들은 따로 가입하시면 됩니다.',
     },
 
     // CTA / Pricing Section
@@ -176,7 +177,7 @@ const translations = {
       item1Highlight: '무료',
       item1Suffix: '로 사용하실 수 있습니다.',
       item2: 'OKX 거래소에서 제공하는 기능인 signal bot을 이용한 카피트레이딩입니다.',
-      item3: '각 1,000 / 3,000 / 6,000 / 10,000 / 50,000 테더로 단리로 운용됩니다.',
+      item3: '각 1,000 / 3,000 / 6,000 / 10,000 테더로 단리로 운용됩니다.',
       item4: '원하시는 자본금의 링크를 클릭하시고 subscribe하시면 OKX 거래소에서 카피트레이딩을 시작하실 수 있습니다.',
       item5: '자본금을 맡기는 것이 아닌 시작과 종료를 언제든지 정하실 수 있습니다.',
       item6: '구독(무료)하시고 적용하시면 WinCircuit에게 매매를 맡기실 수 있습니다.',
@@ -185,7 +186,6 @@ const translations = {
       btn2: '자본금 3,000 USDT Signal Bot 구독하기',
       btn3: '자본금 6,000 USDT Signal Bot 구독하기',
       btn4: '자본금 10,000 USDT Signal Bot 구독하기',
-      btn5: '자본금 50,000 USDT Signal Bot 구독하기',
     },
 
     // Lifetime Modal
@@ -204,10 +204,9 @@ const translations = {
     // Payment Modal
     paymentModal: {
       title: '결제 안내',
-      qrPlaceholder: 'QR Code',
-      qrSoon: '추후 제공 예정',
       walletLabel: 'USDT 지갑 주소 (TRC-20)',
-      walletAddress: '추후 제공 예정',
+      walletAddress: 'TVRhk7X6GJEfqHXedbd3zG9Zi9RAMLacgu',
+      copied: '복사됨!',
       note1: '위 지갑 주소로 3,300 USDT를 이체해 주세요.',
       note2: '이체 후 트레이딩뷰 닉네임을 텔레그램 문의방으로 보내주시면',
       note3: '확인 후 지표 초대가 진행됩니다.',
@@ -365,6 +364,7 @@ const translations = {
       item4: 'Don\'t have time to trade manually',
       tvLink: 'Sign up for TradingView with $15 coupon',
       okxLink: 'Sign up for OKX Futures Exchange',
+      okxPayback: '20% fee payback. This is not a solicitation — if you prefer, you can sign up separately.',
     },
 
     // CTA / Pricing Section
@@ -426,7 +426,6 @@ const translations = {
       btn2: 'Subscribe 3,000 USDT Signal Bot',
       btn3: 'Subscribe 6,000 USDT Signal Bot',
       btn4: 'Subscribe 10,000 USDT Signal Bot',
-      btn5: 'Subscribe 50,000 USDT Signal Bot',
     },
 
     // Lifetime Modal
@@ -445,10 +444,9 @@ const translations = {
     // Payment Modal
     paymentModal: {
       title: 'Payment Information',
-      qrPlaceholder: 'QR Code',
-      qrSoon: 'Coming Soon',
       walletLabel: 'USDT Wallet Address (TRC-20)',
-      walletAddress: 'Coming Soon',
+      walletAddress: 'TVRhk7X6GJEfqHXedbd3zG9Zi9RAMLacgu',
+      copied: 'Copied!',
       note1: 'Please transfer 3,300 USDT to the wallet address above.',
       note2: 'After transfer, send your TradingView nickname to our Telegram support channel.',
       note3: 'Indicator invitation will proceed after confirmation.',

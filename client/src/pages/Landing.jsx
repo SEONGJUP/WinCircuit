@@ -12,6 +12,7 @@ function Landing() {
   const [showNoticeModal, setShowNoticeModal] = useState(false);
   const [lang, setLang] = useState('ko');
   const [langOpen, setLangOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
   const langRef = useRef(null);
 
   const t = translations[lang];
@@ -270,31 +271,23 @@ function Landing() {
             {t.adaptive.rule} <strong>{t.adaptive.ruleBold}</strong> {t.adaptive.ruleSuffix}
           </p>
 
-          <div className="chart-example fade-up">
-            <div className="chart-header">
-              <span className="chart-dot green-dot" />
-              <span>{t.adaptive.chartLabel}</span>
+          <div className="chart-image-stack fade-up">
+            <div className="chart-image-card">
+              <div className="chart-image-header">
+                <span className="chart-dot green-dot" />
+                <span>{t.adaptive.chartLabel}</span>
+              </div>
+              <div className="chart-image-body">
+                <img src="https://github.com/SEONGJUP/WinCircuit/blob/main/public/images/1.png?raw=true" alt="WinCircuit 실전 차트 1" className="chart-img" />
+              </div>
             </div>
-            <div className="chart-visual">
-              <svg viewBox="0 0 800 200" className="chart-svg">
-                <defs>
-                  <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#10b981" stopOpacity="0.3" />
-                    <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
-                  </linearGradient>
-                </defs>
-                <polyline points="0,80 80,70 160,90 240,60 320,120 400,150 480,170 560,140 640,160 720,180 800,190" fill="none" stroke="#ef4444" strokeWidth="2" opacity="0.6" />
-                <polyline points="0,120 80,110 160,100 240,85 320,70 400,65 480,55 560,50 640,40 720,35 800,25" fill="url(#greenGrad)" stroke="#10b981" strokeWidth="3" />
-                <circle cx="320" cy="70" r="5" fill="#10b981" />
-                <circle cx="480" cy="55" r="5" fill="#10b981" />
-                <circle cx="720" cy="35" r="5" fill="#10b981" />
-                <text x="320" y="60" fill="#10b981" fontSize="11" textAnchor="middle">{t.adaptive.chartProfit}</text>
-                <text x="480" y="45" fill="#10b981" fontSize="11" textAnchor="middle">{t.adaptive.chartProfit}</text>
-                <text x="720" y="25" fill="#10b981" fontSize="11" textAnchor="middle">{t.adaptive.chartProfit}</text>
-              </svg>
-              <div className="chart-legend">
-                <span className="legend-item"><span className="legend-line red-line" />{t.adaptive.legendMarket}</span>
-                <span className="legend-item"><span className="legend-line green-line" />{t.adaptive.legendProfit}</span>
+            <div className="chart-image-card">
+              <div className="chart-image-header">
+                <span className="chart-dot green-dot" />
+                <span>{t.adaptive.chartLabel}</span>
+              </div>
+              <div className="chart-image-body">
+                <img src="https://github.com/SEONGJUP/WinCircuit/blob/main/public/images/2.png?raw=true" alt="WinCircuit 실전 차트 2" className="chart-img" />
               </div>
             </div>
           </div>
@@ -438,7 +431,7 @@ function Landing() {
           </div>
 
           <div className="signup-links">
-            <a href="#" className="signup-link-btn tradingview" target="_blank" rel="noopener noreferrer">
+            <a href="https://kr.tradingview.com/pricing/?share_your_love=crocusvernus" className="signup-link-btn tradingview" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="signup-icon">
                 <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" />
               </svg>
@@ -448,7 +441,7 @@ function Landing() {
                 <polyline points="7 7 17 7 17 17" />
               </svg>
             </a>
-            <a href="#" className="signup-link-btn okx" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.okx.com/join/33286229" className="signup-link-btn okx" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="signup-icon">
                 <rect x="3" y="3" width="7" height="7" />
                 <rect x="14" y="3" width="7" height="7" />
@@ -461,6 +454,7 @@ function Landing() {
                 <polyline points="7 7 17 7 17 17" />
               </svg>
             </a>
+            <p className="okx-payback-note">{t.target.okxPayback}</p>
           </div>
         </div>
       </section>
@@ -487,7 +481,7 @@ function Landing() {
               <p>{t.cta.subDesc1}<br />{t.cta.subDesc2}</p>
               <button className="pricing-btn" onClick={() => setShowSubModal(true)}>{t.cta.subBtn}</button>
               <div className="pricing-card-links">
-                <a href="#" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/channel/UCE_Z9nwENY39pP1-domZfrA" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
                   <svg viewBox="0 0 24 24" fill="currentColor" className="pricing-link-svg youtube-svg">
                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                   </svg>
@@ -502,7 +496,7 @@ function Landing() {
               <p>{t.cta.lifeDesc1}<br />{t.cta.lifeDesc2}</p>
               <button className="pricing-btn primary" onClick={() => setShowLifeModal(true)}>{t.cta.lifeBtn}</button>
               <div className="pricing-card-links">
-                <a href="#" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/channel/UCE_Z9nwENY39pP1-domZfrA" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
                   <svg viewBox="0 0 24 24" fill="currentColor" className="pricing-link-svg youtube-svg">
                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                   </svg>
@@ -513,7 +507,7 @@ function Landing() {
           </div>
 
           <div className="cta-actions">
-            <a href="#" className="cta-telegram-btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/+doou3Es7qI00ZDhl" className="cta-telegram-btn" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor" className="cta-telegram-icon">
                 <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
               </svg>
@@ -529,7 +523,7 @@ function Landing() {
           <h2 className="section-title disclaimer-title">{t.disclaimer.title}</h2>
           <div className="disclaimer-box">
             <p className="disclaimer-youtube-link">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/channel/UCE_Z9nwENY39pP1-domZfrA" target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="disclaimer-yt-icon">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                 </svg>
@@ -587,8 +581,13 @@ function Landing() {
               </ol>
             </div>
             <div className="modal-signal-btns">
-              {[t.subModal.btn1, t.subModal.btn2, t.subModal.btn3, t.subModal.btn4, t.subModal.btn5].map((btn, i) => (
-                <a key={i} href="#" className="modal-signal-btn" target="_blank" rel="noopener noreferrer">{btn}</a>
+              {[
+                { label: t.subModal.btn1, url: 'https://www.okx.com/trading-bot/signal/3339563072947142656' },
+                { label: t.subModal.btn2, url: 'https://www.okx.com/trading-bot/signal/3339571381662015488' },
+                { label: t.subModal.btn3, url: 'https://www.okx.com/trading-bot/signal/3339595764258488320' },
+                { label: t.subModal.btn4, url: 'https://www.okx.com/trading-bot/signal/3339600759439671296' },
+              ].map((item, i) => (
+                <a key={i} href={item.url} className="modal-signal-btn" target="_blank" rel="noopener noreferrer">{item.label}</a>
               ))}
             </div>
           </div>
@@ -628,16 +627,33 @@ function Landing() {
             <div className="modal-body payment-body">
               <div className="qr-placeholder">
                 <div className="qr-box">
-                  <svg viewBox="0 0 100 100" width="160" height="160">
-                    <rect width="100" height="100" fill="#1e293b" rx="8" />
-                    <text x="50" y="50" textAnchor="middle" dominantBaseline="middle" fill="#64748b" fontSize="10">{t.paymentModal.qrPlaceholder}</text>
-                    <text x="50" y="65" textAnchor="middle" dominantBaseline="middle" fill="#475569" fontSize="7">{t.paymentModal.qrSoon}</text>
-                  </svg>
+                  <img src="https://github.com/SEONGJUP/WinCircuit/blob/main/public/images/QR.png?raw=true" alt="QR Code" className="qr-img" />
                 </div>
               </div>
               <p className="wallet-label">{t.paymentModal.walletLabel}</p>
               <div className="wallet-address">
                 <code>{t.paymentModal.walletAddress}</code>
+                <button
+                  className="copy-btn"
+                  onClick={() => {
+                    navigator.clipboard.writeText(t.paymentModal.walletAddress);
+                    setCopied(true);
+                    setTimeout(() => setCopied(false), 2000);
+                  }}
+                  title="Copy"
+                >
+                  {copied ? (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  ) : (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                    </svg>
+                  )}
+                  {copied && <span className="copied-tooltip">{t.paymentModal.copied}</span>}
+                </button>
               </div>
               <p className="payment-note">
                 {t.paymentModal.note1}<br />

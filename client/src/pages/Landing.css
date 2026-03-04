@@ -768,28 +768,36 @@
   color: #10b981;
 }
 
-/* Chart Example */
-.chart-example {
+/* Chart Image Cards */
+.chart-image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chart-image-card {
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s;
 }
 
-.chart-example:hover {
-  border-color: rgba(16, 185, 129, 0.15);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+.chart-image-card:hover {
+  border-color: rgba(16, 185, 129, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25), 0 0 20px rgba(16, 185, 129, 0.05);
+  transform: translateY(-2px);
 }
 
-.chart-header {
-  padding: 1rem 1.5rem;
+.chart-image-header {
+  padding: 0.85rem 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   font-size: 0.85rem;
   color: #94a3b8;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .green-dot {
@@ -801,43 +809,15 @@
   animation: pulse 2s infinite;
 }
 
-.chart-visual {
-  padding: 1.5rem;
+.chart-image-body {
+  padding: 1rem;
 }
 
-.chart-svg {
+.chart-img {
   width: 100%;
   height: auto;
-}
-
-.chart-legend {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.8rem;
-  color: #64748b;
-}
-
-.legend-line {
-  display: inline-block;
-  width: 20px;
-  height: 3px;
-  border-radius: 2px;
-}
-
-.red-line {
-  background: #ef4444;
-}
-
-.green-line {
-  background: #10b981;
+  border-radius: 10px;
+  display: block;
 }
 
 /* ===========================
@@ -1128,6 +1108,14 @@
   border-color: rgba(245, 158, 11, 0.5);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+}
+
+.okx-payback-note {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-align: center;
+  margin-top: -0.25rem;
+  line-height: 1.4;
 }
 
 .signup-icon {
@@ -1675,6 +1663,13 @@
   border-radius: 12px;
 }
 
+.qr-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  display: block;
+}
+
 .wallet-label {
   font-size: 0.8rem;
   color: #64748b;
@@ -1687,15 +1682,52 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   margin-bottom: 1.5rem;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  position: relative;
 }
 
 .wallet-address code {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: #fbbf24;
   font-family: 'Courier New', monospace;
   letter-spacing: 0.02em;
   word-break: break-all;
+}
+
+.copy-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 0.35rem;
+  cursor: pointer;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fbbf24;
+}
+
+.copied-tooltip {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #10b981;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .payment-note {
