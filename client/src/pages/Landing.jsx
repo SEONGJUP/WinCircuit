@@ -469,14 +469,16 @@ function Landing() {
               <div className="pricing-badge">{t.cta.subBadge}</div>
               <h3>{t.cta.subTitle}</h3>
               <p>{t.cta.subDesc1}<br />{t.cta.subDesc2}<br />{t.cta.subDesc3}</p>
-              <div className="pricing-card-actions">
+              <div className="pricing-card-bottom">
                 <button className="pricing-btn" onClick={() => setShowSubModal(true)}>{t.cta.subBtn}</button>
-                <a href="https://www.youtube.com/channel/UCE_Z9nwENY39pP1-domZfrA" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="pricing-link-svg youtube-svg">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
-                  {t.cta.subVideo}
-                </a>
+                <div className="pricing-card-links">
+                  <a href="https://www.youtube.com/channel/UCE_Z9nwENY39pP1-domZfrA" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="pricing-link-svg youtube-svg">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    {t.cta.subVideo}
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -484,14 +486,16 @@ function Landing() {
               <div className="pricing-badge">{t.cta.lifeBadge}</div>
               <h3>{t.cta.lifeTitle}</h3>
               <p>{t.cta.lifeDesc1}<br />{t.cta.lifeDesc2}</p>
-              <div className="pricing-card-actions">
+              <div className="pricing-card-bottom">
                 <button className="pricing-btn primary" onClick={() => setShowLifeModal(true)}>{t.cta.lifeBtn}</button>
-                <a href="https://www.youtube.com/channel/UCE_Z9nwENY39pP1-domZfrA" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="pricing-link-svg youtube-svg">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
-                  {t.cta.lifeVideo}
-                </a>
+                <div className="pricing-card-links">
+                  <a href="https://www.youtube.com/channel/UCE_Z9nwENY39pP1-domZfrA" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="pricing-link-svg youtube-svg">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    {t.cta.lifeVideo}
+                  </a>
+                </div>
               </div>
             </div>
           </div>

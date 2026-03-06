@@ -1196,6 +1196,8 @@
   border-radius: 20px;
   text-align: center;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing-card:hover {
@@ -1276,19 +1278,19 @@
   box-shadow: 0 6px 24px rgba(16, 185, 129, 0.3);
 }
 
-/* 버튼 + 유튜브 링크를 같은 줄에 배치 */
-.pricing-card-actions {
+/* 카드 하단 버튼+링크 영역을 카드 바닥에 고정 */
+.pricing-card-bottom {
+  margin-top: auto;
+}
+
+/* #18 카드 하단 아이콘 링크 */
+.pricing-card-links {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.6rem;
   margin-top: 1.2rem;
   padding-top: 1.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.pricing-card-actions .pricing-btn {
-  width: auto;
-  white-space: nowrap;
 }
 
 .pricing-icon-link {
