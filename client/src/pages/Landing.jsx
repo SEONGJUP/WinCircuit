@@ -13,29 +13,9 @@ function Landing() {
   const [lang, setLang] = useState('ko');
   const [langOpen, setLangOpen] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [showVisitors, setShowVisitors] = useState(false);
-  const [visitorData, setVisitorData] = useState(null);
   const langRef = useRef(null);
 
   const t = translations[lang];
-
-  useEffect(() => {
-    fetch('http://localhost:3001/api/visit', { method: 'POST' })
-      .then(r => r.json())
-      .then(d => setVisitorData(d))
-      .catch(() => {});
-  }, []);
-
-  const handleFooterCopyClick = () => {
-    if (!showVisitors && !visitorData) {
-      fetch('http://localhost:3001/api/visitors')
-        .then(r => r.json())
-        .then(d => { setVisitorData(d); setShowVisitors(true); })
-        .catch(() => {});
-    } else {
-      setShowVisitors(prev => !prev);
-    }
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -568,14 +548,7 @@ function Landing() {
             {t.footer.disclaimer}<br />
             {t.footer.disclaimer2}
           </p>
-          <p className="footer-copy" onClick={handleFooterCopyClick}>
-            {t.footer.copy}
-          </p>
-          {showVisitors && visitorData && (
-            <p className="footer-visitor-stats">
-              {visitorData.today} / {visitorData.total}
-            </p>
-          )}
+          <p className="footer-copy">{t.footer.copy}</p>
         </div>
       </footer>
 

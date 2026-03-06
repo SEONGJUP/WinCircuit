@@ -1,58 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
-
-// --- Visitor Counter ---
-const VISITOR_FILE = path.join(__dirname, 'visitors.json');
-
-function loadVisitors() {
-  try {
-    return JSON.parse(fs.readFileSync(VISITOR_FILE, 'utf8'));
-  } catch {
-    return { total: 0, daily: {} };
-  }
-}
-
-function saveVisitors(data) {
-  fs.writeFileSync(VISITOR_FILE, JSON.stringify(data, null, 2));
-}
-
-const todayVisitors = new Set();
-
-app.post('/api/visit', (req, res) => {
-  const ip = req.ip || req.connection.remoteAddress;
-  const today = new Date().toISOString().slice(0, 10);
-  const data = loadVisitors();
-
-  if (!data.daily[today]) {
-    data.daily[today] = { count: 0, ips: [] };
-  }
-
-  const dayKey = `${today}_${ip}`;
-  if (!todayVisitors.has(dayKey)) {
-    todayVisitors.add(dayKey);
-    data.total++;
-    data.daily[today].count++;
-    data.daily[today].ips.push(ip);
-    saveVisitors(data);
-  }
-
-  res.json({ today: data.daily[today].count, total: data.total });
-});
-
-app.get('/api/visitors', (req, res) => {
-  const data = loadVisitors();
-  const today = new Date().toISOString().slice(0, 10);
-  const todayCount = data.daily[today]?.count || 0;
-  res.json({ today: todayCount, total: data.total });
-});
 
 // Health check
 app.get('/api/health', (req, res) => {

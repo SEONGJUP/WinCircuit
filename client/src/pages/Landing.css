@@ -1809,21 +1809,6 @@
 .footer-copy {
   font-size: 0.75rem;
   color: #334155;
-  cursor: default;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.footer-visitor-stats {
-  font-size: 0.7rem;
-  color: #475569;
-  margin-top: 0.3rem;
-  animation: fadeInStats 0.3s ease;
-}
-
-@keyframes fadeInStats {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ===========================
