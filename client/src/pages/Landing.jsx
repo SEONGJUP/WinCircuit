@@ -468,7 +468,7 @@ function Landing() {
             <div className="pricing-card">
               <div className="pricing-badge">{t.cta.subBadge}</div>
               <h3>{t.cta.subTitle}</h3>
-              <p>{t.cta.subDesc1}<br />{t.cta.subDesc2}</p>
+              <p>{t.cta.subDesc1}<br />{t.cta.subDesc2}<br />{t.cta.subDesc3}</p>
               <button className="pricing-btn" onClick={() => setShowSubModal(true)}>{t.cta.subBtn}</button>
               <div className="pricing-card-links">
                 <a href="https://www.youtube.com/channel/UCE_Z9nwENY39pP1-domZfrA" className="pricing-icon-link" target="_blank" rel="noopener noreferrer">
